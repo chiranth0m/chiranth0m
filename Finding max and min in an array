@@ -1,0 +1,15 @@
+num = []
+while True:
+  x = input ('Enter a number : ')
+  try:
+     x = float(x)
+     num.append(x)
+     
+  except:
+    if x == 'done':
+      break
+    else:
+      print('Invalid Input')
+    
+print('Maximum number: ', max(num))        
+print('Minimum number: ', min(num))
